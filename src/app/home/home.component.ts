@@ -36,9 +36,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     }), map((data: number) => {
       return 'Round: ' + (data + 1);
     })).subscribe(data => {
-      console.log(data, 'data');
     }, error => {
-      console.log(error, 'error');
       alert(error.message);
     }, () => {
       console.log('Completed!')
